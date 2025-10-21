@@ -1,0 +1,160 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9FAF8;
+}
+
+header {
+    background-color: #1F2937;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0px 30px 0px 30px;
+    
+}
+
+.logo {
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #F9FAF8;
+    font-size: 18px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 100px;
+    flex:auto;
+}
+.hero {
+    color: #F9FAF8;
+    font-weight: 850;
+    display: flex;
+    flex-direction: column;   /* stack vertically */
+    align-items: center;      /* center horizontally */
+    justify-content: center;  /* center vertically if you give it height */
+    text-align: center;       /* center the text itself */
+     gap: 1rem;                /* space between heading, subtext, button */
+     padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+
+.hero .subtext {
+  font-size: 1.25rem;
+  color: #555;
+  max-width: 600px;
+}
+ 
+
+.btn {
+    background-color: #0a9397;
+    color: #F9FAF8;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+
+.hero button:hover {
+  background: #555;
+}
+
+.biggreybox, .greyboxtext{
+    width: 500px;
+    height: 300px;
+    color:#F9FAF8;
+    font-size: 36px;
+    font-weight: 850;
+    background-color: #494c50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.greyboxtext {
+    display: flex;
+    flex-direction: column;   
+    gap: 60px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;   
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1F2937;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  flex-wrap: wrap;           
+  gap: 1rem;                 
+  padding: 1rem;
+}
+
+.image-container img {
+  width: 200px;             
+  height: 150px;             
+  object-fit: cover;        
+  border-radius: 16px;       
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.03);    
+}
+
