@@ -1,0 +1,47 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #34f134;
+}
+
+h1 {
+    color: #7e157a;
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px;
+    background-color:aqua;
+    
+}
+
+p {
+    color: #000000;
+    font-size: 18px;
+}
+
+iframe {
+    
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #311430;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

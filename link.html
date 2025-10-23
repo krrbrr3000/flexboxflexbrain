@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goofin'</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="linkstyle.css">
+    
+</head>
+
+
+<body>
+    
+    <style>
+  body {
+    overflow-x: hidden;
+    position: relative;
+    height: 100vh;
+    background: #87ceeb; /* sky blue */
+  }
+
+  .apple {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+    animation-name: fall;
+    animation-timing-function: linear;
+  }
+
+  @keyframes fall {
+  0% { transform: translateY(-700px); } /* higher above viewport */
+  80% { transform: translateY(calc(100vh - 50px)); }
+  100% { transform: translateY(calc(100vh - 50px)) scale(0.8); }
+}
+
+</style>
+
+<script>
+  const appleSrc = 'handjob.png'; // or your image
+  function spawnApple() {
+    const apple = document.createElement('img');
+    apple.src = appleSrc;
+    apple.className = 'apple';
+    apple.style.left = Math.random() * window.innerWidth + 'px';
+    apple.style.animationDuration = (2 + Math.random() * 3) + 's'; // 2-5 seconds
+    document.body.appendChild(apple);
+
+    apple.addEventListener('animationend', () => apple.remove());
+  }
+
+  setInterval(spawnApple, 300); // spawn a new apple every 300ms
+</script>
+
+
+    <h1>How do you like them apples?</h1>
+
+    <div class="content">
+
+        
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rfelvI_ikf4?si=4WR80CQDOwAWu7qu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <br><p>Thank you ❤️</p>
+
+
+    </div>
+
+    <footer>Made with ☕ by krrbrr</footer>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
