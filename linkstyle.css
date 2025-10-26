@@ -19,6 +19,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    text-align: match-parent;
     align-items: center;
     margin: 100px;
     background-color:aqua;
